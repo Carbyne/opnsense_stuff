@@ -258,8 +258,9 @@ $leasesfile = '/var/dhcpd/var/db/dhcpd.leases';
   <thead>
     <tr>
       <th><?= gettext("IP address"); ?></th>
+      <th><?= gettext("MAC Address"); ?></th>
       <th><?= gettext("Hostname"); ?></th>
-      <th><?= gettext("Lease type"); ?></th>
+      <th><?= gettext("Lease Type"); ?></th>
       <th><?= gettext("Status"); ?></th>
     </tr>
   </thead>
@@ -306,6 +307,7 @@ $leasesfile = '/var/dhcpd/var/db/dhcpd.leases';
     ?>
       <tr>
         <td><?= $data['ip']; ?></td>
+        <td><?= $data['mac']; ?></td>  
         <td><?= $data['hostname']; ?></td>
         <td><?= $data['act']; ?></td>
         <td>
@@ -322,4 +324,3 @@ $leasesfile = '/var/dhcpd/var/db/dhcpd.leases';
     <?php endif; ?>
   </tbody>
 </table>
-
